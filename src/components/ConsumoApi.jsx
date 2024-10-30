@@ -1,11 +1,11 @@
+import Header from "./Header"
+import '../styles/global.css'
+
 export default function ConsumoApi() {
   return (
     <>
-      <header>
-        
-      </header>
-      <main>
-        
+      <Header></Header>
+      <main>       
       </main>
     </>
   )
