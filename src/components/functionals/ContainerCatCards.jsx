@@ -1,13 +1,18 @@
 import PropTypes from 'prop-types'
-import Card from '../basics/Card'
 
-function ContainerCards({cats}) {
+import './containerCatCards.css'
+
+import CatCard from '../basics/CatCard'
+
+function ContainerCatCards({cats}) {
   return (
     <div className="container-cards">
     {cats.map((cat, index) => (
-        <Card key={index}
+        <CatCard key={index}
         name ={cat.name}
+        img ={cat.img}
         description = {cat.description}
+        vida ={cat.life_span}
         temperament = {cat.temperament} 
         origin = {cat.origin} 
         vcahospitals_url = {cat.vcahospitals_url} 
@@ -17,8 +22,8 @@ function ContainerCards({cats}) {
   )
 }
 
-ContainerCards.propTypes = {
-
+ContainerCatCards.propTypes = {
+  cats : PropTypes.array.isRequired
 }
 
-export default ContainerCards
+export default ContainerCatCards
