@@ -5,11 +5,11 @@ body {
 }
 .miembro-container {
     min-height: 100vh;
-    background-color: #e5d3b3;
+    background-image: url('../assets/background-body.png');
 }
 .header-container {
     position: relative;
-    height: 500px;
+    max-height: calc(400px + 3vw);
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.5); 
 }
@@ -34,35 +34,6 @@ body {
     height: 100%;
     object-fit: cover;
     opacity: 0.7;
-}
-.nav-bar {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: #fff;
-}
-.logo {
-    width: 50px; 
-    height: 50px;
-    background-image: url('D:/Nueva carpeta/Desktop/actividad mujeres/ensayo/src/assets/logo-app.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-.nav-links a {
-    color: #fff;
-    margin-right: 20px;
-    text-decoration: none;
-    font-size: 20px; 
-}
-.nav-links {
-    margin-left: 30px;
-    background-color: transparent;
-    box-shadow: 0 2px 5px rgba(24, 23, 23, 0.2);
-    padding: 10px 50px;
 }
 .header-content {
     position: absolute;
@@ -93,9 +64,12 @@ body {
     text-align: center;
     padding: 10px 10px;
 }
-.miembr-container h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+.miembro-container h2 {
+    color: white;
+    font-size: calc(18px + 1.2vw);
+    font-family: "Unlock", serif;
+    margin: 0;
+    margin-bottom: 1em;
 }
 .miembros-grid {
     display: flex;
@@ -105,11 +79,13 @@ body {
 }
 .miembro-card {
     background: white;
+    font-size: calc(12px + 0.5vw);
     border-radius: 10px;
     padding: 20px;
     width: 300px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
 }
 .miembro-image {
     width: 100px;
@@ -130,19 +106,45 @@ body {
 }
 .section-proposito-metas {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     padding: 40px;
     justify-content: center;
 }
+.proposito{
+    text-align: center;
+}
 .proposito, .metas {
+    font-size: calc(12px + 0.5vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: white;
     border-radius: 8px;
     padding: 20px;
     width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
-
-  
+.miembro-card:hover , .proposito:hover, .metas:hover{
+    transform: scale(1.06);
+}
+.proposito h3, .metas h3, .miembro-card h3{
+    color:  #281f14;
+    font-family: "Unlock", serif;
+}
+.metas figure{
+    height: calc(90px + 5vh);
+    width: calc(65px + 6vw);
+    margin: 0;
+    margin-top: 0.5em;
+}
+.metas figure img{
+    height: 100%;
+    width: 100%;
+}
   
   
   

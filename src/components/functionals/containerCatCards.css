@@ -5,7 +5,7 @@
     --color-blue:  #17cfe7;
     --font-links:"Itim", cursive;
 }
-.container-cards{
+.container-cards-cats{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -35,6 +35,10 @@
     border-radius: 50%;
     box-shadow: 0 0 20px var(--color-blue);  
 }
+.img-cat{
+    display: flex;
+    align-items: center;
+}
 
 .card a{
     background-color: var(--color-brown);
@@ -47,3 +51,4 @@
     font-size: calc(12px + 0.3vw);
     font-family:var(--font-links)
 }
+

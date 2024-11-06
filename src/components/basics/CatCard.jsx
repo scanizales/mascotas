@@ -34,7 +34,9 @@ const CatCard = ({name, img,  description, vida , temperament, origin, vcahospit
             <p><strong>Life span: </strong>{vida} years.</p>         
             <p><strong>Character: </strong>{textWithEnd}</p>
           </section>
-          <img src={img}></img> 
+          <section className='img-cat'>
+            <img src={img}></img>
+          </section> 
         </article>
         <p><strong>Description: </strong>{description}</p>      
         <a href={vcahospitals_url} target='_blank'>Learn more here</a>       

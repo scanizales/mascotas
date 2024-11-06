@@ -29,7 +29,7 @@ input{
     outline: none;
 }
 button{
-    background-image: url('../../assets/buscador.png');
+    background-image: url('../../assets/icons/buscador.png');
     background-size: cover;
     background-position: center;
     height:calc(20px + 1vw);

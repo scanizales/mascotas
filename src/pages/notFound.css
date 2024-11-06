@@ -1,0 +1,58 @@
+.not-found{
+    display: grid;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.section-NotFound{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+.img-NotFound{
+    display: flex;
+    width: 30em;
+    height: 30em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 8px 12px hsl(301.85deg 17.47% 8.04% / 45%);
+}
+
+
+.itim-regular {
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5em;
+  }
+
+  .link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (max-width: 390px) {
+    .not-found {
+      font-size: 12px;
+      padding: 1em;
+    }
+
+    .img-NotFound {
+      width: 20em;
+      height: 20em;
+    }
+
+    .itim-regular {
+      font-size: 1.2em;
+    }
+  }

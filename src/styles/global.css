@@ -1,6 +1,14 @@
 :root{
+    background-image: url(../assets/background-body.png);
     --color-white: #ffffff;
     --color-texto-2: #000000;
     --color-brown: #281f14;
     --color-blue:  #4bd0e2;
+    --font-primary: 'Roboto';
+}
+ body{
+    margin: 0;
+    font-family: var(--font-primary);
+    font-weight: 400;
+    width: 100%;
 }

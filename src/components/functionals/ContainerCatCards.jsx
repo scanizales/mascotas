@@ -6,7 +6,7 @@ import CatCard from '../basics/CatCard'
 
 function ContainerCatCards({cats}) {
   return (
-    <div className="container-cards">
+    <div className="container-cards-cats">
     {cats.map((cat, index) => (
         <CatCard key={index}
         name ={cat.name}

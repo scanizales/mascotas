@@ -7,11 +7,11 @@ import Button from "../basics/Button"
 import Input from "../basics/Input"
 
 //importación del icono cuando no se encuentre la raza
-import cry from '../../assets/cry.png'
+import cry from '../../assets/icons/cry.png'
 
 import './consumoApi.css'
 
-export default function ConsumoApi() {
+export default function consumoApi() {
  
     //creación de estados
     const [cats, setCats] = useState([]) //estado para almacenar los datos de la API

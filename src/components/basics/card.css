@@ -1,0 +1,37 @@
+:root{
+    --color-white: #ffffff;
+    --color-texto-2: #000000;
+    --color-brown: #281f14;
+    --color-blue: #4bd0e2
+    }
+    
+    .card-main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color:var(--color-white);
+        border-radius: 10px;
+        padding: calc(20px + 2.5vw);
+        width: calc(150px + 1vw);
+        height:calc(100px + 1vh);
+        box-shadow: 1px 8px 12px hsl(301.85deg 17.47% 8.04% / 45%);
+        transition: transform 0.3s;
+        gap:1em;
+        font-family: "Itim", cursive;
+        font-size: calc(14px + 0.6vw);
+    }
+    
+    .card-main:hover{
+        transform: translateY(-5px);
+    }
+    
+    
+    .card-icon{
+        width: calc(60px + 2vw);
+    
+    }
+    .text{
+      max-width: 80%;
+    }

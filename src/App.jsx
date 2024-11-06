@@ -1,11 +1,15 @@
-import GroupPersons from '../src/pages/GroupPersons'
+import Router from "../src/routes/Router";
+
+
+import "../src/styles/global.css";
+
 function App() {
  
   return (
     <> 
-    <GroupPersons></GroupPersons> 
+    <Router/>
     </>
   )
 }
 
-export default App
+export default App;
