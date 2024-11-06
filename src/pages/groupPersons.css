@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.miembro-container {
+    min-height: 100vh;
+    background-image: url('../assets/background-body.png');
+}
+.header-container {
+    position: relative;
+    max-height: calc(400px + 3vw);
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 10%; 
+    transform: translateY(-50%); 
+    text-align: left;
+    color: #fff;
+    max-width: 800px;
+    padding: 0 20px;
+}
+.header-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;  
+}
+.header-image-cat {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    max-width: 800px;
+    padding: 0 20px;
+}
+.header-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.header-description {
+    font-size: 18px;
+    margin-top: 10px;
+}
+.paw-background {
+    background-image: url('assets/img/huellas-gato.png');
+    background-repeat: repeat;
+    background-size: 50px;
+    background-position: center;
+}
+.section-conocenos {
+    text-align: center;
+    padding: 10px 10px;
+}
+.miembro-container h2 {
+    color: white;
+    font-size: calc(18px + 1.2vw);
+    font-family: "Unlock", serif;
+    margin: 0;
+    margin-bottom: 1em;
+}
+.miembros-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.miembro-card {
+    background: white;
+    font-size: calc(12px + 0.5vw);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+.miembro-image {
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+}
+.cargo {
+    color: #00a8cc;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.social-icons a {
+    margin: 5px;
+    color: #00a8cc;
+    font-size: 24px;
+}
+.section-proposito-metas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    justify-content: center;
+}
+.proposito{
+    text-align: center;
+}
+.proposito, .metas {
+    font-size: calc(12px + 0.5vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+.miembro-card:hover , .proposito:hover, .metas:hover{
+    transform: scale(1.06);
+}
+.proposito h3, .metas h3, .miembro-card h3{
+    color:  #281f14;
+    font-family: "Unlock", serif;
+}
+.metas figure{
+    height: calc(90px + 5vh);
+    width: calc(65px + 6vw);
+    margin: 0;
+    margin-top: 0.5em;
+}
+.metas figure img{
+    height: 100%;
+    width: 100%;
+}
+  
+  
+  

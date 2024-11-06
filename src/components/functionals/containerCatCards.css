@@ -1,0 +1,54 @@
+:root{
+    --color-white: #ffffff;
+    --color-texto-2: #000000;
+    --color-brown: #281f14;
+    --color-blue:  #17cfe7;
+    --font-links:"Itim", cursive;
+}
+.container-cards-cats{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    gap:2em;
+    padding-top:2em;
+    padding-bottom: 2em;
+    font-size: calc(12px + 0.4vw);
+}
+.card{
+    max-width: calc(400px + 5vw);
+    background-color: var(--color-white);
+    padding: 2em;
+    border-radius: 30px;
+    transition: transform 0.3s ease-in-out;
+
+}
+.card:hover{
+    transform: scale(1.06);
+}
+.card article{
+    display: flex;
+}
+.card article img{
+    width: calc(200px + 3vw);
+    height: 13em;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--color-blue);  
+}
+.img-cat{
+    display: flex;
+    align-items: center;
+}
+
+.card a{
+    background-color: var(--color-brown);
+    text-decoration: none;
+    padding: 0.5em;
+    border-radius: 15px;
+    color: var(--color-white);
+    margin-left: 32%;
+    margin-top: 4em;
+    font-size: calc(12px + 0.3vw);
+    font-family:var(--font-links)
+}
+
