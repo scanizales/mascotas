@@ -1,0 +1,55 @@
+body{
+    margin:0;
+    font-family: "Roboto", sans-serifs
+}
+.results-api{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('../../assets/background-body.png');
+    padding: calc(14px + 0.3vw);
+}
+form{
+    display: flex;
+    justify-content: space-between;
+    background-color: #281f14;
+    padding: 0.3em;
+    width: fit-content;
+    border-radius: 0.8em;
+    border: 3px solid black;
+    height: fit-content;
+}
+input{
+    background-color: #281f14;
+    color: white;
+    border: none;
+    font-weight: bold;
+    font-size: calc(14px + 0.3vw);
+    box-shadow: none;
+    outline: none;
+}
+button{
+    background-image: url('../../assets/icons/buscador.png');
+    background-size: cover;
+    background-position: center;
+    height:calc(20px + 1vw);
+    width:calc(20px + 1vw);
+    border-radius: 10px;
+}
+.not-found{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+    width: 300px;
+    color:white;
+    background-color: #281f14;
+    padding: 1em;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.not-found img{
+    width: 200px;
+    height: 200px;
+}
