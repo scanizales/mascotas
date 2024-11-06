@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 //importación de los hooks
 import { useEffect, useState } from "react"
 
@@ -69,4 +68,4 @@ export default function consumoApi() {
     </>
   )
 }
->>>>>>> dev
+
