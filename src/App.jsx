@@ -1,10 +1,9 @@
-import  ConsumoApi from './components/functionals/ConsumoApi'
-
+import GroupPersons from '../src/pages/GroupPersons'
 function App() {
  
   return (
-    <>  
-     <ConsumoApi></ConsumoApi>
+    <> 
+    <GroupPersons></GroupPersons> 
     </>
   )
 }
