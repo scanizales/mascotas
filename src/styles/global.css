@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root{
     background-image: url(../assets/background-body.png);
     --color-white: #ffffff;
@@ -11,4 +15,29 @@
     font-family: var(--font-primary);
     font-weight: 400;
     width: 100%;
+}
+.form-adopt{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+}
+.form-adopt form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    gap: 1em;
+    width: calc(40% + 6vw); 
+    background-color: #7d7d7e2a;
+    box-shadow: 1px 8px 12px hsl(301.85deg 17.47% 8.04% / 45%);
+    padding: 2em;
+    margin-bottom: 3em;
+}
+.form-adopt h3{
+    font-weight: bold;
+    font-size: calc(20px + 1vw); 
+}
+.button{
+    background-color: var(--color-brown);
 }

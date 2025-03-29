@@ -1,4 +1,4 @@
-
+import { useSelector } from "react-redux";
 //importación de los hooks
 import { useEffect, useState } from "react"
 
@@ -12,12 +12,17 @@ import cry from '../../assets/icons/cry.png'
 
 import './consumoApi.css'
 
+import { addCat} from "../../redux/slices/catSlice";
+import {useDispatch} from "react-redux";
+
+
 export default function consumoApi() {
  
     //creación de estados
     const [cats, setCats] = useState([]) //estado para almacenar los datos de la API
     const [buscador, setBuscador] = useState('') //estado alamcenar la raza a buscar
- 
+    
+    const dispatch = useDispatch();
 
     //función para hacer llamado a la API
     const callApi = async(url) => {
@@ -31,6 +36,8 @@ export default function consumoApi() {
         }
     }
     
+    const catsInRedux = useSelector((state) => state.cat);
+
     //hacer llamado a la api
     useEffect(() => {
         callApi('https://api.thecatapi.com/v1/breeds')        
@@ -47,22 +54,33 @@ export default function consumoApi() {
     //variable que almacena los datos de los gatos agregándole la imágen y filtrar el dato que se de en buscador
     //nota: si no hay nada en buscador va a devolver todos los elementos de cats
     const datos = cats.map((gato) =>
-      ({...gato, img: new URL(`../../assets/cats/${gato.id}.png`, import.meta.url).href})).filter((item) => item.name.toLowerCase().includes(buscador.toLowerCase()))
+      ({...gato, img: new URL(`../../assets/cats/${gato.id}.png`, import.meta.url).href}));
   
+    const searchCats = datos.filter((item) => item.name.toLowerCase().includes(buscador.toLowerCase()));
+
+    useEffect(() => {
+      if (datos.length === 15 && catsInRedux.length === 0) {
+        cats.forEach((cat) => {
+          dispatch(addCat(cat));
+        });
+      }
+    }, [cats, dispatch, catsInRedux.length]);
+    
+
   return (
     <>
       <div className="results-api">
-          <form onSubmit={handleBuscar}>
+          <form onSubmit={handleBuscar} className="form-search">
             <Input type="text" placeholder="Enter the breed..." name='buscador'></Input>
             <Button type="submit"></Button>       
           </form> 
-          {datos.length === 0 && buscador !== ''?(
+          {searchCats.length === 0 && buscador !== ''?(
               <section className="not-found">
                 <p>Soorry, no results found for your kitten's breed.</p>
                 <img src={cry}></img>
               </section>
           ):(
-            <ContainerCatCards cats={datos}></ContainerCatCards>
+            <ContainerCatCards cats={searchCats}></ContainerCatCards>
           )}   
       </div>
     </>

@@ -1,11 +1,10 @@
 import PropTypes from 'prop-types';
-
 import "./card.css"
 
 const Card = ({image, text}) => {
 
   return (
-
+  <>
       <div className="card-main">
         <article>
           <img className="card-icon" src={image}></img>
@@ -14,6 +13,7 @@ const Card = ({image, text}) => {
          <strong>{text}</strong> 
         </article>
       </div>
+  </>
   )
 };
 

@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-
+import {Card, CardHeader, CardBody, Image, Link, Button} from "@heroui/react";
 
 const CatCard = ({name, img,  description, vida , temperament, origin, vcahospitals_url}) => {
   
@@ -26,21 +26,27 @@ const CatCard = ({name, img,  description, vida , temperament, origin, vcahospit
   const textWithEnd = showListWithEnd(list)
 
   return (
-      <div className='card'>  
-        <article>
-          <section>
-            <h3>Breed: {name}</h3>
-            <p><strong>Origin: </strong>{origin}</p> 
-            <p><strong>Life span: </strong>{vida} years.</p>         
-            <p><strong>Character: </strong>{textWithEnd}</p>
-          </section>
-          <section className='img-cat'>
-            <img src={img}></img>
-          </section> 
-        </article>
-        <p><strong>Description: </strong>{description}</p>      
-        <a href={vcahospitals_url} target='_blank'>Learn more here</a>       
-      </div>
+    <>
+      <Card className="card">
+        <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
+          <p className="text-tiny uppercase font-bold">Life span: {vida} years.</p>
+          <small className="text-default-500">Origin:{origin}</small>
+          <h4 className="font-bold text-large">Breed: {name}</h4>
+        </CardHeader>
+        <CardBody className="overflow-visible py-2">
+        <Image
+            isBlurred
+            alt="HeroUI Album Cover"
+            className="m-5"
+            src={img}
+            width={240}
+          />
+          <p><strong>Description: </strong>{description}</p> 
+          <p><strong>Character: </strong>{textWithEnd}</p>
+          <Button showAnchorIcon as={Link} color="primary" href={vcahospitals_url} target='_blank' variant="solid">Learn more here</Button>       
+        </CardBody>
+    </Card>
+    </>
   )
 }
 

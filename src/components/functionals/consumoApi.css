@@ -9,7 +9,7 @@ body{
     background-image: url('../../assets/background-body.png');
     padding: calc(14px + 0.3vw);
 }
-form{
+.form-search{
     display: flex;
     justify-content: space-between;
     background-color: #281f14;
@@ -19,7 +19,7 @@ form{
     border: 3px solid black;
     height: fit-content;
 }
-input{
+.input-search{
     background-color: #281f14;
     color: white;
     border: none;
@@ -28,7 +28,7 @@ input{
     box-shadow: none;
     outline: none;
 }
-button{
+.button-search{
     background-image: url('../../assets/icons/buscador.png');
     background-size: cover;
     background-position: center;

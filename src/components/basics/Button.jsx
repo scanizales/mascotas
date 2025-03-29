@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 
 function Button({type}) {
   return (
-    <button className='button' type={type}></button>
+    <button className='button-search' type={type}></button>
   )
 }
 

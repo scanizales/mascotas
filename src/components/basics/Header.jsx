@@ -14,6 +14,8 @@ export default function Header() {
             </figure>
             <Link className="btn-nav" to="/" >Home</Link>
             <Link className="btn-nav" to="about">About us</Link>
+            <Link className="btn-nav" to="adopt" >Adoptar</Link>
+            <Link className="btn-nav" to="about">Dar en adopción</Link>          
           </nav>
         </div>
         <h1>Definitive Guide to Caring for <br></br>and Getting to Know your Cat Child</h1>
