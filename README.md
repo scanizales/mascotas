@@ -22,3 +22,11 @@ FelineCare es una aplicación web diseñada para brindar a los dueños de gatito
 - Karina Vásquez
 - Andrea Contreras
 - Johanna Manzuera
+
+
+  # Tecnologías
+
+  - HTML5
+  - CSS3
+  - React
+  - Redux
