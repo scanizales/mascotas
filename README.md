@@ -6,12 +6,13 @@
 
 # Requisitos Técnicos
 
-# Tecnologías utilizadas 🛠️:
+*Tecnologías utilizadas* 🛠️:
 - Node.js
 - React.js
 - Redux
 - HTML5
 - CSS3
+- JavaScript
 - API consumida: [(https://api.thecatapi.com/v1/breeds)]
 
 # Características de la Aplicación
